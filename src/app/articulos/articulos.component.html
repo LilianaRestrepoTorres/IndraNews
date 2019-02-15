@@ -27,16 +27,6 @@
             </ng-container>
         </ul>
 
-        <ul>
-            <li *ngFor="let articulo of articulos">{{articulo.titulo}}</li>
-        </ul>
-
-        <ul>
-            <ng-container *ngFor="let articulo of articulos">
-                <li *ngIf="articulo.active">{{articulo.titulo}}</li>
-            </ng-container>
-        </ul>
-
         <!-- Pagination -->
         <ul class="pagination justify-content-center mb-4">
             <li class="page-item">
@@ -64,12 +54,6 @@
             </div>
             </div>
         </div>
-
-        <ul>
-                <ng-container *ngFor="let articulo of articulos">
-                    <li *ngIf="articulo.active">{{articulo.titulo}}</li>
-                </ng-container>
-            </ul>
 
         <!-- Categories Widget -->
         <div class="card my-4">
