@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ArticulosComponent } from './articulos/articulos.component';
 import { CrudArticuloComponent } from './crudArticulo/crudArticulo.component';
+import { ArticulosServices } from './services/articulos.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { CrudArticuloComponent } from './crudArticulo/crudArticulo.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ArticulosServices],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
