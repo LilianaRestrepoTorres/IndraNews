@@ -3,8 +3,18 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false;
+  firebase: {
+    apiKey: "AIzaSyA6QvAUPPJpOy6dHxiU1BI0t2kRc-l3g-s",
+    authDomain: "indranews-807a6.firebaseapp.com",
+    databaseURL: "https://indranews-807a6.firebaseio.com",
+    projectId: "indranews-807a6",
+    storageBucket: "indranews-807a6.appspot.com",
+    messagingSenderId: "410311372714"
+  }
+
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file
