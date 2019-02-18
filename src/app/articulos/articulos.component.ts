@@ -6,17 +6,17 @@ import { ArticulosServices } from '../services/articulos.service';
   templateUrl: './articulos.component.html'
 })
 export class ArticulosComponent {
-  
-    categorias:any = [
-      {nombre: 'Tecnología'},
-      {nombre: 'Energía'},
-      {nombre: 'Transporte'},
-      {nombre: 'TeamIndra'}
-    ]
+  categorias:any = [
+    {nombre: 'Tecnología'},
+    {nombre: 'Energía'},
+    {nombre: 'Transporte'},
+    {nombre: 'TeamIndra'}
+  ]
 
     articulos = null;
-
     constructor(private articulosServices: ArticulosServices){
       this.articulos = articulosServices.articulos;
     }
+
+    
 }

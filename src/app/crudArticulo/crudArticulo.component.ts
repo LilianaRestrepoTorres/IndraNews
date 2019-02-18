@@ -1,31 +1,23 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ArticulosServices } from '../services/articulos.service';
 
 @Component({
   selector: 'app-crudArticulo',
   templateUrl: './crudArticulo.component.html'
 })
 export class CrudArticuloComponent {
-  articulos:any = [
-    {id: 1, titulo: 'Articulo 1', active: true},
-    {id: 2, titulo: 'Articulo 2', active: false},
-    {id: 3, titulo: 'Articulo 3', active: true},
-  ];
 
   id = null;
+  articulo:any = {};
 
-  constructor(private route: ActivatedRoute){
+  constructor(private route: ActivatedRoute, private articulosServices:ArticulosServices){
     console.log(this.route.snapshot.params['id']);
     console.log(this.route.snapshot.queryParams['action2']);
     console.log(this.route.snapshot.queryParams['referer']);
     this.id = this.route.snapshot.params['id'];
-    console.log(this.buscarArticulo());
+    this.articulo = this.articulosServices.buscarArticulo(this.id);
+    
   }
-
-  buscarArticulo(){
-    return this.articulos.filter((articulos)=>{return articulos.id == this.id})[0] || null;
-  }
-
-
     
 }

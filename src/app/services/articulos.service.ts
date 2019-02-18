@@ -12,4 +12,8 @@ export class ArticulosServices{
         return this.articulos;
     }
 
+    public buscarArticulo(id){
+        return this.articulos.filter((articulos)=>{return articulos.id == id})[0] || null;
+    }
+
 }
