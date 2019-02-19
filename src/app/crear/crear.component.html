@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="well">
+        <a routerLink="/crear">Articulos</a> / Crear Artículo
+    </div>
+    <div class="row">
+        <h1 class="my-4">
+            <small>Crear Artículo</small>
+        </h1>
+        <div class="col-md-12">
+            <label>Nombre</label>
+            <input type="text" class="form-control" [(ngModel)]="articulo.nombre">
+            <br>
+            <label>Descripción</label>
+            <textarea class="form-control" [(ngModel)]="articulo.descripcion"></textarea>
+            <br>
+            <label>Fecha</label>
+            <input type="date" [(ngModel)]="articulo.fecha">
+            <br><br>
+            <label>Usuario</label>
+            <input type="text" [(ngModel)]="articulo.usuario">
+            <hr>
+            <a class="btn btn-primary" (click)=guardarArticulo()>Enviar</a>
+            <a class="btn btn-default" routerLink="/crear">Cancelar</a>
+        </div>
+    </div>
+</div>

@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyA6QvAUPPJpOy6dHxiU1BI0t2kRc-l3g-s",
-    authDomain: "indranews-807a6.firebaseapp.com",
-    databaseURL: "https://indranews-807a6.firebaseio.com",
-    projectId: "indranews-807a6",
-    storageBucket: "indranews-807a6.appspot.com",
-    messagingSenderId: "410311372714"
+    apiKey: "AIzaSyA1nNHKx8wh7wwH3y39ohQn9MVFAv-mKXg",
+    authDomain: "indranews-3f146.firebaseapp.com",
+    databaseURL: "https://indranews-3f146.firebaseio.com",
+    projectId: "indranews-3f146",
+    storageBucket: "",
+    messagingSenderId: "852401431245"
   }
 };
 

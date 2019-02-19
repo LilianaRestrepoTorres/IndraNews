@@ -16,6 +16,11 @@ export class ArticulosComponent {
     articulos = null;
     constructor(private articulosServices: ArticulosServices){
       this.articulos = articulosServices.articulos;
+      articulosServices.getArticulos( )
+    	.subscribe( respond => {
+    		console.log( respond );
+    		this.articulos = respond;
+    	})
     }
 
     
