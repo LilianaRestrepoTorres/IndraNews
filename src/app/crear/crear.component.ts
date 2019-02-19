@@ -14,6 +14,8 @@ export class CrearArticuloComponent {
     guardarArticulo(){
         this.articulo.id = Date.now();
         this.articulosServices.guardarArticulo(this.articulo);
+        alert('Se creó el artículo con éxito!');
+        this.articulo={};
     }
 
 }
